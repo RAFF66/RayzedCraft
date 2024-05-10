@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-family: Poppins;
+}
+
+header {
+    background-color: #001524;
+    color: #fff;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Menempatkan semua konten di dalam header menjadi terpusat secara horizontal */
+}
+
+.logo {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center; /* Menempatkan logo menjadi terpusat */
+}
+
+.logo img {
+    max-height: 125px; /* Sesuaikan dengan kebutuhan Anda */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+nav ul li a:hover {
+    background-color: #0a3150;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column; /* Mengatur tata letak menjadi kolom di layar kecil */
+    margin-top: 20px;
+}
+
+.left, .right {
+    padding: 0 20px;
+    text-align: center; /* Mengatur teks ke tengah */
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Mengatur gambar di tengah */
+    align-items: center; /* Mengatur gambar di tengah */
+}
+
+.right {
+    flex: 1;
+    padding: 20px;
+}
+
+.right img {
+    width: 100%; /* Mengatur gambar agar memenuhi lebar */
+    height: auto;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+}
+
+.copy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7289da; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efek hover untuk tombol */
+.copy-button:hover {
+    background-color: #677bc4; /* Warna latar belakang tombol saat dihover */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7289da; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+/* Efek hover untuk tombol */
+.button:hover {
+    background-color: #677bc4; /* Warna latar belakang tombol saat dihover */
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row; /* Mengatur tata letak menjadi baris di layar besar */
+    }
+
+    .left, .right {
+        flex: 1; /* Mengatur kedua bagian agar memiliki lebar yang sama */
+    }
+
+    .right img {
+        width: auto; /* Mengembalikan lebar gambar ke ukuran aslinya */
+        max-width: 100%; /* Menghindari gambar keluar dari layar */
+    }
+
+    .discord-button {
+        width: auto; /* Mengatur lebar tombol sesuai konten */
+        margin-top: 0; /* Menghilangkan margin atas untuk menyesuaikan tata letak */
+    }
+}
